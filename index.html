@@ -10,17 +10,17 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.poptrox.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
+		<!--[if lte IE 8]><script src="http://ngrok.tunnel.mobi/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="http://ngrok.tunnel.mobi/js/jquery.min.js"></script>
+		<script src="http://ngrok.tunnel.mobi/js/jquery.scrolly.min.js"></script>
+		<script src="http://ngrok.tunnel.mobi/js/jquery.poptrox.min.js"></script>
+		<script src="http://ngrok.tunnel.mobi/js/skel.min.js"></script>
+		<script src="http://ngrok.tunnel.mobi/js/init.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="http://ngrok.tunnel.mobi/css/skel.css" />
+			<link rel="stylesheet" href="http://ngrok.tunnel.mobi/css/style.css" />
 		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="http://ngrok.tunnel.mobi/css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
 
@@ -28,7 +28,7 @@
 			<section id="header">
 				<header>
 					<h1>Tunnel</h1>
-					<p>让所有人都可以轻松的访问到你本地的Local Host环境!</p>
+					<p>无需复杂配置，安全地在公网访问你的本地网络服务</p>
 				</header>
 				<footer>
 					<a href="#banner" class="button style2 scrolly scrolly-centered">Tunnel是什么？</a>
@@ -38,59 +38,56 @@
 		<!-- Banner -->
 			<section id="banner">
 				<header>
-					<h2>Tunnel</h2>
+					<h2>Tunnel是一个基于<a href="https://ngrok.com" target="_blank">ngrok</a>的网络服务</h2>
 				</header>
 				<p>
-					Tunnel是一个基于<a href="https://ngrok.com" target="_blank">Ngrok</a>的网络服务<br>
-					可以快速的让你能够用外网链接（http://example.tunnel.mobi）来访问local host环境<br>
-					虽然，你可以直接使用Ngrok，但国内的网络环境下，访问速度特别慢，并且常常有被墙的风险<br>
-					所以就有了部署在国内的tunnel.mobi服务，并且几乎支持所有Ngrok的付费服务<br>
-					使用Ngrok的客户端，修改配置文件直接使tunnel.mobi的服务<br>
-					是的，就是这么简单！</p>
+					通过Tunnel，他人在公网可以通过http://example.tunnel.mobi这样的二级域名来访问你的本地网络服务。
+					<br>
+					Tunnel部署在国内，支持ngrok的绝大多数功能，同时改变了由于ngrok服务器在美国所造成的访问缓慢和不可用的现状。
+				</p>
 				<footer>
-					<a href="#first" class="button style2 scrolly">如何来使用Tunnel?</a>
+					<a href="#first" class="button style2 scrolly">Tunnel有哪些使用场景？</a>
 				</footer>
 			</section>
 		
 		<!-- Feature 1 -->
 			<article id="first" class="container box style1 right">
-				<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+				<a href="#" class="image fit"><img src="http://ngrok.tunnel.mobi/images/pic01.png" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>1.下载Ngrok客户端</h2>
+						<h2>无需部署，快速测试开发环境</h2>
 					</header>
-					<p><a href="https://ngrok.com/download" target="_blank">下载最新的客户端</a><br>支持Linux、Mac OS、Windows平台。</p>
+					<p>Tunnel会创建一个通道，将类似于example.tunnel.mobi的公网域名与您本地的某个端口连接起来。<br>他人可以使用这个域名直接访问你的开发环境，无需部署。</p>
 				</div>
 			</article>
 		
 		<!-- Feature 2 -->
 			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+				<a href="#" class="image fit"><img src="http://ngrok.tunnel.mobi/images/pic02.png" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>2.修改配置文件</h2>
+						<h2>分析HTTP过程</h2>
 					</header>
-					<p>直接下载修改后<a href="http://ngrok.tunnel.mobi/ngrok.cfg" target='_blank'>ngrok.cfg</a>文件<br>
-					或者修改ngrok的默认配置文件为：</br>
-					<code>
-						server_addr: "tunnel.mobi:44433"
-						trust_host_root_certs: true
-					</code>
+					<p>ngrok客户端可以捕获通过通道传入或传出的所有内容。<br>
+					您可以根据您的需求显示原始请求/响应、解析了的header和表单数据以及检查JSON/XML的语法等等。
 					</p>
 				</div>
 			</article>
 
 			<article class="container box style1 right">
-				<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+				<a href="#" class="image fit"><img src="http://ngrok.tunnel.mobi/images/pic03.png" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>3.启动服务</h2>
+						<h2>重放请求</h2>
 					</header>
 					<p>
-						在console执行<br>
-						<code>ngrok -config=ngrok.cfg 80</code><br>
-						就可以通过分配的子域名来访问网站<br>
-						更多使用技巧，可以看<a href="https://ngrok.com/usage" target="_blank">文档</a>
+					占位。<br>
+					占位。<br>
+					占位。<br>
+					占位。<br>
+					占位。<br>
+					占位。<br>
+
 					</p>
 				</div>
 			</article>
@@ -99,10 +96,15 @@
 		<!-- Portfolio -->
 			<article class="container box style2">
 				<header>
-					<h2>为什么要用Tunnel</h2>
-					<p>
-						如果你是一个开发人员<br>
-						你绝对可以想到很多的使用场景
+					<h2>如何使用Tunnel？</h2>
+					<p><div align="left">
+						1. <a href="https://ngrok.com/download" target="_blank">下载官方最新客户端</a><br>
+						2. <a href="http://ngrok.tunnel.mobi/ngrok.cfg" target="_blank">下载配置文件ngrok.cfg</a><br>
+						3. 运行客户端时，请添加-config以载入配置文件。<br>
+						例如 ngrok -config ngrok.cfg -subdomain example 8080<br>
+						意为将本地的8080端口链接到example.tunnel.mobi上<br>
+						4. 更多使用技巧，可见<a href="https://ngrok.com/usage" target="_blank">文档</a>。
+						</div>
 					</p>
 				</header>
 			</article>
@@ -118,7 +120,7 @@
 			</ul>
 			<div class="copyright">
 				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li>
+					<li>&copy; Tunnel Mobi. All rights reserved.</li>
 				</ul>
 			</div>
 		</section>
