@@ -10,12 +10,12 @@
 
 	body
 	{
-		background-image:		url('http://ngrokd.b0.upaiyun.com/images/bg.jpg');
+		background-image:		url('https://ngrokd.b0.upaiyun.com/images/bg.jpg');
 		background-repeat:		no-repeat;
 		background-size:		cover;
 		background-position: 	auto;
 		background-attachment:	scroll;
-		-ms-behavior: url('http://ngrokd.b0.upaiyun.com/css/ie/backgroundsize.min.htc');
+		-ms-behavior: url('https://ngrokd.b0.upaiyun.com/css/ie/backgroundsize.min.htc');
 	}
 
 	/* Section/Article */
@@ -45,7 +45,7 @@
 		.button
 		{
 			position: relative;
-			-ms-behavior: url('http://ngrokd.b0.upaiyun.com/css/ie/PIE.htc');
+			-ms-behavior: url('https://ngrokd.b0.upaiyun.com/css/ie/PIE.htc');
 		}
 
 			input[type="button"].style2,
@@ -83,7 +83,7 @@
 		#footer .icons
 		{
 			position: relative;
-			-ms-behavior: url('http://ngrokd.b0.upaiyun.com/css/ie/PIE.htc');
+			-ms-behavior: url('https://ngrokd.b0.upaiyun.com/css/ie/PIE.htc');
 		}
 		
 /*********************************************************************************/
