@@ -22,11 +22,11 @@
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			'global':	{ range: '*', href: 'http://ngrok.tunnel.mobi/css/style.css', containers: 1140, grid: { gutters: 40 } },
-			'wide':		{ range: '-1680', href: 'http://ngrok.tunnel.mobi/css/style-wide.css', containers: 960 },
-			'normal':	{ range: '-1080', href: 'http://ngrok.tunnel.mobi/css/style-normal.css', containers: '95%', viewport: { scalable: false } },
-			'narrow':	{ range: '-840', href: 'http://ngrok.tunnel.mobi/css/style-narrow.css', grid: { gutters: 30 } },
-			'mobile':	{ range: '-736', href: 'http://ngrok.tunnel.mobi/css/style-mobile.css', containers: '95%!', grid: { collapse: true, gutters: 20 } }
+			'global':	{ range: '*', href: 'http://ngrokd.b0.upaiyun.com/css/style.css', containers: 1140, grid: { gutters: 40 } },
+			'wide':		{ range: '-1680', href: 'http://ngrokd.b0.upaiyun.com/css/style-wide.css', containers: 960 },
+			'normal':	{ range: '-1080', href: 'http://ngrokd.b0.upaiyun.com/css/style-normal.css', containers: '95%', viewport: { scalable: false } },
+			'narrow':	{ range: '-840', href: 'http://ngrokd.b0.upaiyun.com/css/style-narrow.css', grid: { gutters: 30 } },
+			'mobile':	{ range: '-736', href: 'http://ngrokd.b0.upaiyun.com/css/style-mobile.css', containers: '95%!', grid: { collapse: true, gutters: 20 } }
 		}
 	});
 
